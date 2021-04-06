@@ -1,0 +1,469 @@
+/*=======FONT Family======*/
+@font-face{
+  src:url(../font/Cookie-Regular.ttf);
+  font-family: Cookie-Regular;
+}
+
+@font-face{
+  src:url(../font/Raleway-Regular.ttf);
+  font-family: Raleway-Regular;
+}
+
+@font-face{
+  src:url(../font/Raleway-Bold.ttf);
+  font-family: Raleway-Bold;
+}
+
+@font-face{
+  src:url(../font/Raleway-SemiBold.ttf);
+  font-family: Raleway-SemiBold;
+}
+/*=======FONT Family End======*/
+
+/*========Common CSS===========*/
+
+body{
+	font-family: Raleway-Regular;
+}
+
+h1{
+	font-family: Raleway-Bold;
+	font-size: 50px;
+	font-weight: 700;
+	color:#2a3b40;
+	text-transform: uppercase;
+}
+h3{
+	font-family: Raleway-Bold;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+p{
+	font-family: Raleway-Regular;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 20px;
+	color:#2a3b40;
+}
+.section-title1{
+	margin:0;
+	font-family: Cookie-Regular;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 35px;
+	text-transform: uppercase;
+} 
+.section-title2{
+	font-family: Raleway-Bold;
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color:#ad6c12;
+}
+/*========Common CSS End=========*/
+
+/*=======Main MENU START========*/
+header{
+	
+}
+.hamburger-menu{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	cursor: pointer;
+	transition: right .7s;
+}
+
+
+.hamburger-menu .line{
+	width: 100%;
+	height: 3px;
+	background: #fff;
+}
+.change .line{
+	background-color: #fff;
+}
+
+.change .line-1{
+	transform: rotate(45deg)translate(6px,12px);
+
+}
+
+.change .line-2{
+	display: none;
+}
+
+.change .line-3{
+	transform: rotate(-45deg)translate(3px,-8px);
+
+}
+.menu ul li a{
+	padding:0 15px !important;
+	position: relative;
+	font-family:Raleway-Bold; 
+	font-size: 22px;
+	font-weight: 500;
+	color: #fff !important;
+	text-transform: uppercase;
+}
+
+.menu ul li a:hover{
+	color: #ad6c12 !important;
+
+}
+
+.on {
+	background-color: #2a3b40 !important;
+	padding:10px 0;
+	transition: all .5s ease;
+}
+/*=======Main MENU END========*/
+
+/*=======Banner Part Start======*/
+.jumbotron{
+	background: url(../images/banner.png);
+	height: 650px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.banner-content {
+    margin-top: 160px;
+    padding: 60px 0;
+    background: #f7f7f7a8;
+}
+
+.banner-content button{
+	background: #fff;
+	color:#2a3b40;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: all .5s ease-in-out;	
+}
+.banner-content button:hover{
+	background:#ad6c12;
+	color:#fff;
+}
+/*=======Banner Part End======*/
+
+/*======BD Traditional Flavour Start=====*/
+.traditional{
+	padding: 65px 0 0;
+	background: #2a3b40;
+}
+.tra-content{
+	padding: 80px 40px 0;
+}
+.tra-content h1{
+	margin-bottom: 40px;
+	font-size: 35px;
+	color:#fff;
+}
+.tra-content p{
+	color:#fff;
+	letter-spacing: 1px;
+}
+.tra-img{
+	padding-bottom: 65px;
+	overflow: hidden;
+}
+.tra-img img{
+transition: all .5s ease-in-out;
+}
+.tra-img img:hover{
+	transform: scale(1.1);
+}
+.all-new-taste{
+	padding: 65px 0;
+	background: white;
+}
+
+.circle i{
+	color: #2a3b40;
+	font-size: 25px;	
+}
+.taste h3{
+	margin:10px 0;
+}
+/*======BD Traditional Flavour End=====*/
+
+/*======ON Your Plate Start======*/
+.plate{
+	background: url(../images/plate.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 65px 0;
+}
+
+.plate-card{
+	padding-top: 30px;
+	background: #ffffffdb;
+}
+.plate-main{
+	padding:0 0 30px;
+}
+.plate-main h2{
+	padding-bottom: 50px: 
+}
+
+.plate-content{
+	padding: 50px 20px;
+	text-align: center;
+	letter-spacing: 1px;
+	transition: all .5s ease-in-out;
+}
+.plate-content:hover{
+	transform: translateY(-5%);
+}
+.plate-content p{
+	line-height: 20px;
+}
+.plate-img{
+	overflow: hidden;
+}
+.plate-img img{
+	transition: all .5s ease-in-out;
+	
+}
+.plate-img img:hover{
+	transform: scale(1.1);
+}
+/*======ON Your Plate End======*/
+
+/*=====Made Easy Part End=====*/
+.made-easy{
+	padding:65px 0;
+	position: relative;
+	background: #d4d8d9;
+	overflow: hidden;
+}
+.left{
+	position: absolute;
+	left: 0;
+	top:0;
+	
+}
+.right{
+	position: absolute;
+	right: 0;
+	top: 0;	
+}
+.made-easy-content h1{
+	font-size: 40px;
+}
+.made-easy-content p{
+	margin: 0 0 20px;
+	line-height: 25px;
+}
+
+.made-easy-content ul li{
+	padding-right: 25px;
+	font-family:Raleway-Bold;
+	font-size: 22px;
+	font-weight: 700; 
+}
+/*=====Made Easy Part End=====*/
+
+/*=======Our New Menu Start=======*/
+.our-new-menu{
+	background: url(../images/ournewmenu.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 65px 0 0;
+}
+
+.our-menu-card{
+	background: #ffffffdb;
+}
+.menu-content{
+	padding: 30px 0;
+}
+.new-menu-item{
+	padding: 30px;
+}
+.menu-discription{
+	padding-right: 50px;
+}
+
+.menu-img img{
+	padding:15px;
+	background: #fff;
+	border-radius: 50%;
+}
+/*=======Our New Menu End=======*/
+
+/*=======Spices Part Start=======*/
+.spices-img{
+	width:100%;
+	height: 650px;
+}
+.spices-img img{
+	width: 100%;
+	height: 100%;
+}
+
+/*=======Spices Part End=======*/
+
+/*=======Book Part Start=======*/
+.book-here{
+	padding: 65px 0;
+	background: #2a3b40;
+	color:#fff;
+}
+
+.book-content h1{
+	color:#fff;
+}
+.book-content{
+	padding: 20px
+}
+.pepole{
+	background: #2a3b40;
+	color:#fff;
+}
+.book-content input{
+	background: #2a3b40;
+	color:#fff;
+}
+.book-pra{
+	color:#fff;
+}
+.book-button{
+	padding-top: 20px;
+}
+.book-button button{
+	padding: 5px 40px;
+	font-family: Raleway-Bold;
+	font-weight: 700;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+.book-button button:hover{
+	background: #ad6c12;
+	color:#fff;
+}
+/*=======Book Part Start=======*/
+
+/*=====Our New Menu2 Start=====*/
+.our-new-menu2{
+	padding: 65px 0;
+	background: #d4d8d9
+}
+.menu2-content{
+	padding:0 0 30px;
+}
+.menu2-img{
+	width:100%;
+	overflow: hidden;
+}
+
+.menu2-img img{
+	width: 100%;
+	transition: all .5s ease-in-out;
+}
+
+.menu2-img img:hover{
+	transform: scale(1.1);
+	}
+.menu2-discription{
+	background: #fff;
+	padding: 20px;
+}
+.menu2-discription span{
+	font-family:Raleway-Regular;
+	font-size: 18px;
+	font-weight: 400;
+	color:#2a3b40; 
+}
+
+.menu2-discription h4{
+	font-family: Raleway-Bold;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 10px 0;
+}
+.menu2-discription p{
+	font-family:Raleway-Regular;
+	font-size: 18px;
+	font-weight: 400;
+	color:#2a3b40;
+}
+
+.border-line{
+	border-bottom: 5px solid #ad6c12;
+	}
+
+/*=====Our New Menu2 Start=====*/
+
+/*=====Social Media Contact Start=====*/
+.social{
+	padding:65px 0;
+	background: #2a3b40;
+}
+.social-content{
+
+}
+
+.social-content p{
+	font-size: 18px;
+	line-height: 25px;
+	color:#fff;
+}
+.social-content h1{
+	padding: 0 0 20px;
+	font-size: 25px;
+	color:#fff;
+}
+.social-media ul li i{
+	font-size: 30px;
+	padding: 10px;
+	background: #fff;
+	border-radius: 50%;
+	transition: all .5s ease;
+}
+.social-media ul li i:hover{
+	background: #ad6c12;
+	color:#fff;
+	cursor: pointer;
+}
+/*=====Social Media Contact End=====*/
+
+/*========Contact Part Start========*/
+.contact{
+	padding: 65px 0;
+	background: #fff;
+}
+.contact-content{
+
+}
+
+.contact-content h1{
+	 font-size: 30px;
+	 padding: 0 0 30px;
+}
+.contact-content p{
+	padding: 0 150px 0 0;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.contact-content2 h4{
+	padding: 0 0 30px;
+	font-family:Raleway-Bold;
+	font-size: 25px;
+	font-weight: 700:;
+	text-transform: uppercase;
+}
+.contact-content2 p{
+	font-family:Raleway-Bold;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+/*========Contact Part End========*/
+
+
+
